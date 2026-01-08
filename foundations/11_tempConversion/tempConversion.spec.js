@@ -1,7 +1,7 @@
 const {convertToCelsius, convertToFahrenheit} = require('./tempConversion')
 
 describe('convertToCelsius', () => {
-  test.skip('works', () => {
+  test('works', () => {
     expect(convertToCelsius(32)).toEqual(0);
   });
   test.skip('rounds to 1 decimal', () => {
