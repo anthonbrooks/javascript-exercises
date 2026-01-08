@@ -1,10 +1,15 @@
+// make an empty array to hold all values between start and end
+
+
 const sumAll = function(start, end) {
-    let range = [];
+
+    let sum = 0;
+
     for (let i = start; i <= end; i++) {
-        range.push[i];
-        // return range;
+        console.log(i);
+        sum += i;
     }
-    console.log(range);
+    return sum;
 };
 
 sumAll(2, 4);
