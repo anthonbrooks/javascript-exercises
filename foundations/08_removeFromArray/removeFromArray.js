@@ -10,7 +10,7 @@ const removeFromArray = function(arr, ...num) {
     return newArr;
 };
 
-removeFromArray([1, 2, 3, 4], 7, 'tacos');
+removeFromArray([1, 2, 3, 4], 3);
 
 // Do not edit below this line
 module.exports = removeFromArray;
