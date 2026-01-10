@@ -1,14 +1,19 @@
 // Fibonacci Sequence (formula F(n) = F(n - 1) + F(n-2))
 const fibonacci = function(nthMember) {
-    // fibSeq = [0, 1, 1, 2, 3, 5, 8];
-    // return fibSeq[nthMember];
 
+    // start a Fibonacci sequence array
     let fib = [1, 1];
 
-    for (let i = 2; i < nthMember; i++) {
-        fib.push(fib[i - 1] + fib[i - 2]);
+    if (nthMember > 1) {
+        for (let i = 2; i < nthMember; i++) {
+            fib.push(fib[i - 1] + fib[i - 2]);
+        }
+        return fib[nthMember - 1];
+    } else if (nthMember === 1) {
+        return fib[nthMember];
+    } else {
+        return 0;
     }
-    return fib[nthMember - 1];
 };
 
 // Do not edit below this line
