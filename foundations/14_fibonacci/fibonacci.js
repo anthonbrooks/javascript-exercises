@@ -11,6 +11,8 @@ const fibonacci = function(nthMember) {
         return fib[nthMember - 1];
     } else if (nthMember === 1) {
         return fib[nthMember];
+    } else if (nthMember < 0) {
+        return 'OOPS';
     } else {
         return 0;
     }
