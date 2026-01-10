@@ -3,6 +3,9 @@ const fibonacci = function(nthMember) {
 
     // start a Fibonacci sequence array
     let fib = [1, 1];
+    
+    // convert nthMember to Integer
+    nthMember = +nthMember;
 
     if (nthMember > 1) {
         for (let i = 2; i < nthMember; i++) {
@@ -11,9 +14,9 @@ const fibonacci = function(nthMember) {
         return fib[nthMember - 1];
     } else if (nthMember === 1) {
         return fib[nthMember];
-    } else if (nthMember < 0) {
+    } else if (nthMember < 0) { // handling negative integers
         return 'OOPS';
-    } else {
+    } else { // handling if zero is passed
         return 0;
     }
 };
